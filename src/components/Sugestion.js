@@ -1,15 +1,15 @@
 export default function Sugestion(props) {
     return (
-        <div class="sugestao">
-            <div class="usuario">
+        <div className="sugestao">
+            <div className="usuario">
                 <img src={props.img} alt={props.imgalt}/>
-                <div class="texto">
-                    <div class="nome">{props.username}</div>
-                    <div class="razao">{props.reason}</div>
+                <div className="texto">
+                    <div className="nome">{props.username}</div>
+                    <div className="razao">{props.reason}</div>
                 </div>
             </div>
 
-            <div class="seguir">Seguir</div>
+            <div className="seguir">Seguir</div>
         </div>
     );
 }

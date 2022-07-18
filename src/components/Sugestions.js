@@ -8,8 +8,8 @@ export default function Sugestions() {
     { img:"assets/img/smallcutecats.svg", imgalt:"smallcutecats", username:"smallcutecats", reason:"Segue você" },]
 
     return (
-        <div class="sugestoes">
-            <div class="titulo">
+        <div className="sugestoes">
+            <div className="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
@@ -21,6 +21,7 @@ export default function Sugestions() {
                         imgalt={sugestion.imgalt}
                         username={sugestion.username}
                         reason={sugestion.reason}
+                        key={sugestion.username}
                     />)
             }
 

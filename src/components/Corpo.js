@@ -5,14 +5,14 @@ import User from "./User";
 
 export default function Corpo() {
     return (
-        <div class="corpo">
-            <div class="esquerda">
+        <div className="corpo">
+            <div className="esquerda">
                 <Stories />
                 <Posts />
                 
             </div>
 
-            <div class="sidebar">
+            <div className="sidebar">
                 <User 
                     userimg={"assets/img/catanacomics.svg"}
                     userimgalt={"catanacomics"}
@@ -22,11 +22,11 @@ export default function Corpo() {
 
                 <Sugestions />
 
-                <div class="links">
+                <div className="links">
                     Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
                 </div>
 
-                <div class="copyright">
+                <div className="copyright">
                     © 2021 INSTAGRAM DO FACEBOOK
                 </div>
             </div>

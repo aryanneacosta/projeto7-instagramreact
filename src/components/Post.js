@@ -1,33 +1,32 @@
 import React from "react";
 
-
 export default function Post(props) {
     const [clicked, setClicked] = React.useState(false);
-    const [liked, setLicked] = React.useState("heart-outline");
+    const [liked, setLiked] = React.useState("heart-outline");
     if (clicked === true) {
-        setLicked("heart");
+        setLiked("heart");
     } else {
-        setLicked("heart-outline");
+        setLiked("heart-outline");
     }
 
     return (
-        <div class="post">
-            <div class="topo">
-                <div class="usuario">
+        <div className="post">
+            <div className="topo">
+                <div className="usuario">
                     <img src={props.userimg} alt={props.userimgalt} />
                     {props.username}
                 </div>
-                <div class="acoes">
+                <div className="acoes">
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
             </div>
 
-            <div class="conteudo" onClick={() => setClicked(!clicked)}>
+            <div className="conteudo" onClick={() => setClicked(true)}>
                 <img src={props.img} alt={props.imgalt} />
             </div>
 
-            <div class="fundo">
-                <div class="acoes">
+            <div className="fundo">
+                <div className="acoes">
                     <div>
                         <ion-icon
                             name={liked}
@@ -41,9 +40,9 @@ export default function Post(props) {
                     </div>
                 </div>
 
-                <div class="curtidas">
+                <div className="curtidas">
                     <img src={props.imgliked} alt={props.imglikedalt} />
-                    <div class="texto">
+                    <div className="texto">
                         Curtido por <strong>{props.userliked}</strong> e <strong>outras {props.thismany} pessoas</strong>
                     </div>
                 </div>

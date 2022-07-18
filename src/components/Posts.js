@@ -26,7 +26,7 @@ export default function Posts() {
     ]
 
     return (
-        <div class="posts">
+        <div className="posts">
             {
                 post.map(post =>
                     <Post
@@ -39,6 +39,7 @@ export default function Posts() {
                         imglikedalt={post.imglikedalt}
                         userliked={post.userliked}
                         thismany={post.thismany}
+                        key={post.username}
                     />)
             }
 
