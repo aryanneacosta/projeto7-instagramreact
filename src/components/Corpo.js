@@ -3,7 +3,7 @@ import Stories from "./Stories";
 import Sugestions from "./Sugestions";
 import User from "./User";
 
-function Corpo() {
+export default function Corpo() {
     return (
         <div class="corpo">
             <div class="esquerda">
@@ -34,4 +34,3 @@ function Corpo() {
     );
 }
 
-export default Corpo();

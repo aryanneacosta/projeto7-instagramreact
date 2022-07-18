@@ -1,6 +1,6 @@
 import Sugestion from "./Sugestion";
 
-function Sugestions() {
+export default function Sugestions() {
     const sugestion = [{ img:"assets/img/bad.vibes.memes.svg", imgalt:"bad.vibes.memes", username:"bad.vibes.memes", reason:"Segue você" },
     { img:"assets/img/chibirdart.svg", imgalt:"chibirdart", username:"chibirdart", reason:"Segue você" },
     { img:"assets/img/razoesparaacreditar.svg", imgalt:"razoesparaacreditar", username:"razoesparaacreditar", reason:"Novo no Instagram" },
@@ -27,5 +27,3 @@ function Sugestions() {
         </div>
     );
 }
-
-export default Sugestions();

@@ -1,4 +1,4 @@
-function User(props) {
+export default function User(props) {
     return (
         <div class="usuario">
             <img src={props.userimg} alt={props.userimgalt}/>
@@ -9,5 +9,3 @@ function User(props) {
         </div>
     );
 }
-
-export default User();

@@ -1,7 +1,7 @@
 import Story from "./Story";
 
 
-function Stories() {
+export default function Stories() {
     const story = [{ img: "assets/img/9gag.svg", alt: "9gag", user: "9gag" },
     { img: "assets/img/meowed.svg", alt: "meowed", user: "meowed" },
     { img: "assets/img/barked.svg", alt: "barked", user: "barked" },
@@ -29,5 +29,3 @@ function Stories() {
         </div>
     );
 }
-
-export default Stories();

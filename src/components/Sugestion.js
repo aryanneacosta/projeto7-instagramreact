@@ -1,4 +1,4 @@
-function Sugestion(props) {
+export default function Sugestion(props) {
     return (
         <div class="sugestao">
             <div class="usuario">
@@ -13,5 +13,3 @@ function Sugestion(props) {
         </div>
     );
 }
-
-export default Sugestion();

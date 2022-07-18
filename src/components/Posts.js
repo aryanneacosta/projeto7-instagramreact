@@ -1,6 +1,6 @@
 import Post from "./Post";
 
-function Posts() {
+export default function Posts() {
     const post = [{
         userimg: "assets/img/meowed.svg",
         userimgalt: "meowed",
@@ -45,5 +45,3 @@ function Posts() {
         </div>
     );
 }
-
-export default Posts();
