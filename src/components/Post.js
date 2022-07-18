@@ -2,11 +2,12 @@ import React from "react";
 
 export default function Post(props) {
     const [clicked, setClicked] = React.useState(false);
-    const [liked, setLiked] = React.useState("heart-outline");
-    if (clicked === true) {
-        setLiked("heart");
-    } else {
-        setLiked("heart-outline");
+
+
+    function isclicked(clicked) {
+        if (clicked === true) {
+            setClicked(true);
+        } 
     }
 
     return (
@@ -21,7 +22,7 @@ export default function Post(props) {
                 </div>
             </div>
 
-            <div className="conteudo" onClick={() => setClicked(true)}>
+            <div className="conteudo" onClick={() => isclicked(true)}>
                 <img src={props.img} alt={props.imgalt} />
             </div>
 
@@ -29,7 +30,7 @@ export default function Post(props) {
                 <div className="acoes">
                     <div>
                         <ion-icon
-                            name={liked}
+                            name={clicked ? "heart" : "heart-outline"}
                             onClick={() => setClicked(!clicked)}
                         ></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
